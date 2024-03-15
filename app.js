@@ -41,4 +41,55 @@ else {
 }
 
 var checkVowel= prompt("Enter any One Alphabet");
-if()
+ if(
+    checkVowel==="a" ||
+    checkVowel==="e" ||
+    checkVowel==="i" ||
+    checkVowel==="o" ||
+    checkVowel==="u"
+     ){
+        alert("This alphabet is a Vowel");
+    }
+    else{
+        alert("This alphabet is not a Vowel");
+    }
+
+
+
+    var userPassword =  prompt("Enter Your Password...");
+    var confirmPassword=  prompt("Confirm Your Password...");
+    if(userPassword===confirmPassword){
+        alert("Correct! The password you entered matches the original password");
+    }
+    else if(userPassword!==confirmPassword){
+        alert("Incorrect password");
+    }
+
+
+    var greeting;
+    var hour= +prompt("Enter Hour");
+    if(hour<18){
+        alert("Good Day");
+    }
+    else{
+        alert("Good Evening");
+    }
+
+
+
+    var time= +prompt("Enter Time value in 24 hours Format");
+    if(time>=0 && time<=1200){
+        alert("Good Morning")
+    }
+    else if(time>=1200 && time<=1500){
+        alert("Good Afternoon");
+    }
+    else if(time>=1700 && time<=1900){
+        alert("Good Evening");
+    }
+    else if(time>=2100 && time<=2359){
+        alert("Good Night")
+    }
+    else{
+        alert("Please Enter Time value in 24hour Format {Like this: 1400, 1900, 2200}");
+    }
